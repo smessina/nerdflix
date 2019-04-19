@@ -80,6 +80,7 @@
 			playMovie.style.display = "none";
 
 			function reproducir(e){
+				e.preventDefault();
 				
 				playMovie.style.display = "block";
 
@@ -92,6 +93,7 @@
 						return;
 					}
 				});
+				window.scroll({ top : playMovie.offsetTop, behavior : "smooth" });
 
 			}
 		</script>

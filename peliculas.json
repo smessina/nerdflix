@@ -37,7 +37,7 @@
 		"Descripcion" : "Capit\u00e1n Am\u00e9rica: el primer vengador (t\u00edtulo original en ingl\u00e9s: Captain America: The First Avenger) es una pel\u00edcula de superh\u00e9roes estadounidense de 2011 basada en el personaje hom\u00f3nimo de Marvel Comics, producida por Marvel Studios y distribuida por Paramount Pictures.a Es la quinta entrega del universo cinematogr\u00e1fico de Marvel. La cinta fue dirigida por Joe Johnston, con un guion de Christopher Markus y Stephen McFeely, y protagonizada por Chris Evans, Hugo Weaving, Hayley Atwell, Sebastian Stan, Dominic Cooper, Neal McDonough, Derek Luke, Kenneth Choi, Stanley Tucci, y Tommy Lee Jones.",
 		"Estreno" : "2011",
 		"Poster" : "https:\/\/image.ibb.co\/iv82qf\/05.jpg",
-		"Trailer" : "https:\/\/www.youtube.com\/embed\/-J3HfllvXWE"
+		"Trailer" : "https:\/\/www.youtube.com\/embed\/JerVrbLldXw"
 	},
 	{
 		"idPelicula" : "6",
@@ -85,7 +85,7 @@
 		"Descripcion" : "Avengers: Age of Ultron (titulada Avengers: Era de Ultr\u00f3n en Hispanoam\u00e9rica y Vengadores: La era de Ultr\u00f3n en Espa\u00f1a) es una pel\u00edcula de superh\u00e9roes, secuela de The Avengers, dirigida por Joss Whedon y producida por Kevin Feige. Forma parte de la segunda fase del universo cinematogr\u00e1fico de Marvel, junto con Iron Man 3, Thor: The Dark World, Captain America: The Winter Soldier, Guardianes de la Galaxia y Ant Man: El Hombre Hormiga. El elenco es el mismo de la anterior con la inclusi\u00f3n de la Bruja Escarlata, Quicksilver2 y Visi\u00f3n.",
 		"Estreno" : "2015",
 		"Poster" : "https:\/\/image.ibb.co\/e3xTVf\/11.jpg",
-		"Trailer" : "https:\/\/www.youtube.com\/embed\/hpazy0BHzxY"
+		"Trailer" : "https:\/\/www.youtube.com\/embed\/P5iIPfNzj2o"
 	},
 	{
 		"idPelicula" : "12",
@@ -134,5 +134,37 @@
 		"Estreno" : "2017",
 		"Poster" : "https:\/\/image.ibb.co\/h6uLbL\/17.jpg",
 		"Trailer" : "https:\/\/www.youtube.com\/embed\/JBxQ_XYQJhc"
+	},
+	{
+		"idPelicula" : "18",
+		"Titulo" : "Black Panther",
+		"Descripcion" : "Black Panther (titulada Pantera Negra en Hispanoam\u00E9rica) es una pel\u00EDcula de superh\u00E9roes estadounidense de 2018 basada en el personaje de Marvel Comics Pantera Negra. Producida por Marvel Studios y distribuida por Walt Disney Studios, es la decimoctava pel\u00EDcula del Universo cinematogr\u00E1fico de Marvel (MCU). La pel\u00EDcula es dirigida por Ryan Coogler, que escribi\u00F3 el guion con Joe Robert Cole, y es protagonizada por Chadwick Boseman como T'Challa \/ Black Panther, junto con Michael B. Jordan, Lupita Nyong'o, Danai Gurira, Martin Freeman, Daniel Kaluuya, Letitia Wright, Winston Duke, Angela Bassett, Forest Whitaker y Andy Serkis.",
+		"Estreno" : "2018",
+		"Poster" : "https:\/\/i.ibb.co\/jg3QD8g\/18.jpg",
+		"Trailer" : "https:\/\/www.youtube.com\/embed\/xjDjIWPwcPU"
+	},
+	{
+		"idPelicula" : "19",
+		"Titulo" : "Avengers: Infinity War",
+		"Descripcion" : "Avengers: Infinity War (titulada Vengadores: Infinity War en Espa\u00F1a) es una pel\u00EDcula estadounidense de superh\u00E9roes de 2018, basada en el equipo de superh\u00E9roes de Marvel Comics los Vengadores, producida por Marvel Studios y distribuida por Walt Disney Studios Motion Pictures. Es la secuela de The Avengers (2012) y Avengers: Age of Ultron (2015), ubic\u00E1ndose como la d\u00E9cimo novena pel\u00EDcula del Universo cinematogr\u00E1fico de Marvel. Dirigida por los hermanos Anthony y Joe Russo, a partir de un guion escrito por Christopher Markus y Stephen McFeely, cuenta con un reparto coral que incluye a Robert Downey Jr., Chris Evans, Chris Hemsworth, Mark Ruffalo, Scarlett Johansson, Don Cheadle, Benedict Cumberbatch, Tom Holland, Chadwick Boseman, Paul Bettany, Elizabeth Olsen, Anthony Mackie, Sebastian Stan, Danai Gurira, Letitia Wright, Karen Gillan, Dave Bautista, Zoe Saldana, Vin Diesel, Bradley Cooper, Josh Brolin y Chris Pratt.",
+		"Estreno" : "2018",
+		"Poster" : "https:\/\/i.ibb.co\/3pY6Ts6\/19.jpg",
+		"Trailer" : "https:\/\/www.youtube.com\/embed\/6ZfuNTqbHE8"
+	},
+	{
+		"idPelicula" : "20",
+		"Titulo" : "Ant-Man and the Wasp",
+		"Descripcion" : "Ant-Man and the Wasp (titulada como Ant-Man y la Avispa en Espa\u00F1a) es una pel\u00EDcula de superh\u00E9roes estadounidense de 2018 basada en los personajes de Marvel Comics Ant-Man y The Wasp. Producida por Marvel Studios y distribuida por Walt Disney Studios Motion Pictures, es la secuela de Ant-Man, y la vig\u00E9sima pel\u00EDcula del Universo Cinematogr\u00E1fico de Marvel (MCU). La pel\u00EDcula est\u00E1 dirigida por Peyton Reed, quien tambi\u00E9n dirigi\u00F3 la primera parte, con un guion escrito por Chris McKenna, Erik Sommers, Andrew Barrer y Gabriel Ferrari. El largometraje est\u00E1 protagonizado por Paul Rudd, Evangeline Lilly, Hannah John-Kamen, Walton Goggins, Michael Pe\u00F1a, Abby Ryder Fortson, Randall Park, Michelle Pfeiffer, Laurence Fishburne y Michael Douglas.",
+		"Estreno" : "2018",
+		"Poster" : "https:\/\/i.ibb.co\/72YhkLQ\/20.jpg",
+		"Trailer" : "https:\/\/www.youtube.com\/embed\/8_rTIAOohas"
+	},
+	{
+		"idPelicula" : "21",
+		"Titulo" : "Captain Marvel",
+		"Descripcion" : "Captain Marvel es una película estadounidense de superhéroes basada en el personaje de Carol Danvers / Capitana Marvel. Producida por Marvel Studios y distribuida por Walt Disney Studios Motion Pictures, es la vigesimoprimera película del Universo cinematográfico de Marvel (MCU, por sus siglas en inglés). La cinta está escrita y dirigida por Anna Boden y Ryan Fleck, mientras que Meg LeFauve, Nicole Perlman, Geneva Robertson-Dworet, Liz Flahive y Carly Mensch también contribuyeron al guion. Brie Larson protagoniza en el papel titular, junto a Jude Law, Ben Mendelsohn, Lashana Lynch, Gemma Chan, Lee Pace, Clark Gregg, Annette Bening y Samuel L. Jackson.",
+		"Estreno" : "2019",
+		"Poster" : "https:\/\/i.ibb.co\/N289w4f\/21.jpg",
+		"Trailer" : "https:\/\/www.youtube.com\/embed\/Z1BCujX3pw8"
 	}
 ]

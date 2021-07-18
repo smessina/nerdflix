@@ -1,99 +1,94 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-AR">
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Nerdflix</title>
-		<link rel="shortcut icon" href="img/favicon.ico">
+		<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/heroic-features.css">
 		<link rel="stylesheet" href="css/nerdflix.css">
+		<link rel="shortcut icon" href="img/favicon.ico">
+		<title>Nerdflix</title>
 	</head>
 	<body>
-	    <h1><a class="" href="#"><img src="img/nerdflix.png" class="img-responsive" /></a></h1>
-	
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12 text-center">
-					<h3>Ultimos Estrenos</h3>
-				</div>
-			</div>
-			<div class="row text-center" id="peliculas">
+		<!-- Logo -->
+		<h1>
+			<img src="img/nerdflix.png" class="img-responsive">
+		</h1>
+		<main class="container">
 
-				<div class="col-md-3 col-sm-4 pelicula">
+			<!-- Titulo -->
+			<header class="row">
+				<div class="col-lg-12 text-center">
+					<h3>Últimos Estrenos</h3>
+				</div>
+			</header>
+
+			<!-- Catálogo -->
+			<section id="peliculas" class="row text-center">
+
+				<!-- Ficha de Película -->
+				<article class="col-sm-4 col-md-3 pelicula">
 					<div class="thumbnail">
-						<img src="img/sin-foto.jpg" alt="">
+						<img src="img/sin-foto.jpg" class="poster">
 						<div class="caption">
-							<h4>TITULO</h4>
-							<p>ESTRENO</p>
-							<p><a href="#playMovie" class="btn btn-primary">Ver ahora</a></p>
+							<h4 class="titulo">TITULO</h4>
+							<p class="estreno">ESTRENO</p>
+							<a href="#reproductor" class="btn btn-primary reproducir">&#9654; Reproducir</a>
 						</div>
 					</div>
-				</div>
+				</article>
 
-			</div>
-		</div>
-		<div class="container" id="playMovie">
-			<div class="row">
+			</sectior>
+
+		</main>
+
+		<!-- Reproductor -->
+		<aside id="reproductor" class="container">
+
+			<header class="row">
 				<div class="col-lg-12">
-					<h1 class="page-header" id="titulo">TITULO (1900)</h1>
+					<h1 class="page-header">
+						<strong id="titulo">TITULO</strong> <time id="estreno">(1900)</time>
+					</h1>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-8">
-					<iframe width="750" height="400" src="img/sin-video.jpg" frameborder="0" allowfullscreen></iframe>
-					<h3>Descripcion:</h3>
-					<p id="descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem nobis praesentium eum voluptate temporibus, obcaecati quod aspernatur eius modi recusandae, sequi quae. Provident illo eligendi sequi repellat harum, rerum, animi!</p>
+			</header>
+
+			<section class="row">
+
+				<div class="col-sm-8">
+					<iframe id="video" src="https://www.youtube.com/embed/DMxOk3AIAVU" class="embed-responsive-item" frameborder="0" allowfullscreen></iframe>
+					<h3>Descripción:</h3>
+					<p id="descripcion">UNA BREVE RESEÑA DE LA PELICULA</p>
 				</div>
-				<div class="col-md-4">
-					<img id="imagen" class="img-responsive" src="img/sin-foto.jpg" alt="">
+
+				<div class="col-sm-4 text-center">
+					<img id="poster" class="img-thumbnail img-responsive" src="img/sin-foto.jpg">
 				</div>
-			</div>
-		</div>
+
+			</section>
+
+		</aside>
+
+		<!-- Area para programar el funcionamiento -->
 		<script>
-			var ajax = new XMLHttpRequest();
-			ajax.open("GET", "peliculas.json");
-			ajax.onload = function() {
-				if( this.status == 200 ){
-					peliculas = JSON.parse( this.responseText );
-					var listadoPeliculas = document.querySelector("#peliculas");
-					var ficha = document.querySelector(".pelicula").cloneNode(true);
-					
-					listadoPeliculas.innerHTML = "";
+			function obtenerDatos(){
 
-					peliculas.forEach(function(pelicula){
-						var nodo = ficha.cloneNode(true);
-						nodo.querySelector("img").src = pelicula.Poster;
-						nodo.querySelector("h4").innerText = pelicula.Titulo;
-						nodo.querySelector("p").innerText = pelicula.Estreno;
-						nodo.querySelector("a").id = pelicula.idPelicula;
-						nodo.querySelector("a").onclick = reproducir;
-
-						listadoPeliculas.append( nodo );
-					});
-				}
 			}
-			ajax.send();
 
-			var playMovie = document.querySelector("#playMovie");
-			playMovie.style.display = "none";
+			function procesarDatos(){
 
-			function reproducir(e){
-				e.preventDefault();
-				
-				playMovie.style.display = "block";
+			}
 
-				peliculas.forEach(function(pelicula){
-					if (pelicula.idPelicula == e.target.id) {
-						document.querySelector("iframe").src = pelicula.Trailer;
-						document.querySelector("#titulo").innerText = pelicula.Titulo + " (" + pelicula.Estreno + ")";
-						document.querySelector("#descripcion").innerHTML = pelicula.Descripcion;
-						document.querySelector("#imagen").src = pelicula.Poster;
-						return;
-					}
-				});
-				window.scroll({ top : playMovie.offsetTop, behavior : "smooth" });
+			function crearCatalogo(){
+
+			}
+
+			function crearPelicula(){
+
+			}
+
+			function verPelicula(){
 
 			}
 		</script>

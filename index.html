@@ -28,7 +28,7 @@
 			<section id="peliculas" class="row text-center">
 
 				<!-- Ficha de Película -->
-				<article class="col-sm-4 col-md-3 pelicula">
+				<article class="col-sm-4 col-md-3 pelicula hide">
 					<div class="thumbnail">
 						<img src="img/sin-foto.jpg" class="poster">
 						<div class="caption">
@@ -72,24 +72,59 @@
 
 		<!-- Area para programar el funcionamiento -->
 		<script>
+			window.onload = obtenerDatos
+		
+			let reproductor = document.querySelector("#reproductor")
+
+			reproductor.style.display = "none"
+
 			function obtenerDatos(){
 
-			}
-
-			function procesarDatos(){
+				fetch("http://gsx2json.com/api?id=1orQGJzOgHvKep6LJsZCmZgWM_sQOkPAZdZPEn9GFcm4&columns=false").then( procesarDatos )
 
 			}
+			
+			function procesarDatos( datos ){
 
-			function crearCatalogo(){
-
-			}
-
-			function crearPelicula(){
+				datos.json().then( crearCatalogo )
 
 			}
 
-			function verPelicula(){
+			function crearCatalogo( peliculas ){
 
+				peliculas.rows.forEach( crearPelicula )
+
+			}
+
+			function crearPelicula( pelicula ){
+
+				let ficha = document.querySelector(".pelicula").cloneNode(true)
+				
+				ficha.querySelector(".titulo").textContent = pelicula.titulo
+				ficha.querySelector(".estreno").textContent = pelicula.estreno
+				ficha.querySelector(".poster").src = pelicula.poster
+				ficha.querySelector("a").onclick = verPelicula.bind(pelicula)
+				
+				ficha.classList.remove("hide")
+				
+				document.querySelector("#peliculas").appendChild( ficha )
+
+			}
+
+			function verPelicula(evento){
+
+				evento.preventDefault()
+
+				reproductor.style.display = "block"
+
+				window.scroll({ top : reproductor.offsetTop, behavior : "smooth" })
+
+				document.querySelector("#video").src = this.trailer
+				document.querySelector("#poster").src = this.poster
+				document.querySelector("#titulo").textContent = this.titulo
+				document.querySelector("#estreno").textContent = this.estreno
+				document.querySelector("#descripcion").textContent = this.descripcion
+	
 			}
 		</script>
 	</body>
